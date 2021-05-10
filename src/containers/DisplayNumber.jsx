@@ -1,15 +1,16 @@
-// import React, { Component } from "react";
 import { connect } from "react-redux";
 import DisplayNumber from "../components/DisplayNumber";
-// import store from "../store";
 
-function mapReduxStateToReactProps(state) {
+function mapStateToProps(state) {
   return {
-    number: state.number,
+    number: state.user.number,
   };
 }
 
-export default connect(mapReduxStateToReactProps)(DisplayNumber);
+export default connect(mapStateToProps)(DisplayNumber);
+
+// import React, { Component } from "react";
+// import store from "../store";
 
 // // eslint-disable-next-line
 // export default class extends Component {
