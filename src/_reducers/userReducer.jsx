@@ -1,6 +1,6 @@
 import { INCREMENT } from "../_actions/types";
 
-export default function (state, action) {
+export default (state, action) => {
   if (state === undefined) return { number: 0 };
 
   switch (action.type) {
@@ -9,4 +9,4 @@ export default function (state, action) {
     default:
       return state;
   }
-}
+};
