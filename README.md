@@ -1,1 +1,1 @@
-# study-react-redux
+# learn-react-redux
